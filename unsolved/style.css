@@ -65,6 +65,30 @@ nav > a:not(:first-of-type){
 nav > a.logo {
   margin-right: auto;
   text-transform: uppercase;
+  transition: width 2s, height 4s;
+}
+
+nav > a.logo:hover {
+  transform: translate(10px);
+  padding: 10px 10px;
+}
+
+nav > a.home {
+  transition: width 2s, height 4s;
+}
+
+nav > a.home:hover {
+  transform: translate(10px);
+  padding: 20px 20px;
+}
+
+nav > a.contact {
+  transition: width 2s, height 4s;
+}
+
+nav > a.contact:hover {
+  transform: translate(10px);
+  padding: 20px 20px;
 }
 
 main > section, main > article {
@@ -102,9 +126,60 @@ section.hero > button {
   cursor: pointer;
 }
 
+section.hero > button:hover {
+  background-color: #FA5456;
+  animation: hover 1s alternate;
+}
+
+@keyframes hover {
+  to {
+    transform: translate(-10px)
+  }
+}
+
 main article {
   padding: 48px 96px;
 }
+
+main > article > a.ad id nobis aspernatur deleniti! {
+  animation: hover 2s alternate;
+}
+
+@keyframes hover {
+  to {
+    transform: translate(-30px)
+  }
+}
+
+main > article > a.ad id nobis aspernatur deleniti! {
+  animation: hover 2s alternate;
+}
+
+@keyframes hover {
+  to {
+    transform: translate(-30px)
+  }
+}
+
+main > article > a.voluptatibus {
+  animation: hover 2s alternate;
+}
+
+@keyframes hover {
+  to {
+    transform: translate(-30px)
+  }
+}
+
+main > article > a.Corrupti {
+  animation: hover 2s alternate;
+}
+
+@keyframes hover {
+  to {
+    transform: translate(-30px)
+  }
+} 
 
 main p {
   line-height: 1.75;
